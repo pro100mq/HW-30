@@ -1,0 +1,33 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: run-box;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: 100;
+    animation-direction: normal;
+}
+
+@keyframes run-box {
+
+    25% {
+        background-color: blue;
+        transform: translateY(200px);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(200px, 200px);
+    }
+
+    75% {
+        background-color: yellow;
+        transform: translate(200px, 0px);
+    }
+
+    100% {
+        background-color: red;
+        transform: translateX(0px);
+    }
+}
